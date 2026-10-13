@@ -1,0 +1,15 @@
+# Re-creates (deterministically) the detector scores of confirmatory worlds id 10 % and 20 %, seeds 20-29,
+# and caches them, so that parameter-sensitivity analyses run without retraining.
+# A determinism check compares the cached ATFA result with results/confirmatory_v2.
+base: confirmatory_v2.yaml
+
+detectors:
+  enabled: [xgboost, tcn, tcn_xgb]
+
+experiment:
+  seeds: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+  workers: 4
+  sensitivity_seeds: []
+  cache_dir: results/sensitivity_v2/pkl
+  scenarios:
+    id: {split: chronological, levels: [0.10, 0.20]}

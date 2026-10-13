@@ -1,0 +1,22 @@
+# Robustness of the fixed ATFA v2 design to generator assumptions and fleet size.
+# Fresh seeds 40+ (never used before). Design unchanged from configs/default.yaml.
+base: default.yaml
+
+experiment:
+  seeds: [40, 41, 42, 43, 44]
+  workers: 4
+  sensitivity_seeds: []
+  scenarios:
+    # harsher benign conditions: twice the sensor noise, 3x dropouts/stuck sensors, 2x delays and overtime
+    rob_noisy:
+      split: chronological
+      levels: [0.20]
+      generator_overrides:
+        benign: {hours_noise_sd: 0.10, dropout_prob: 0.03, stuck_sensor_rate: 0.012, delay_prob: 0.06}
+        duty: {overtime_prob: 0.06, absence_prob: 0.06}
+    # 5x larger fleet (500 assets, 50 sites), 3 seeds
+    rob_scale500:
+      split: chronological
+      levels: [0.20]
+      seeds: [40, 41, 42]
+      generator_overrides: {n_assets: 500, n_sites: 50}

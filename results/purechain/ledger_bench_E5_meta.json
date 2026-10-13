@@ -1,0 +1,12 @@
+{
+  "rpc": "https://purechainnode.com",
+  "chain_id": 900520900520,
+  "contract": "0x6592cBD3CE1303EAfBfDE9f65301DD428844Ed5E",
+  "blocks": [
+    1815358,
+    1815712
+  ],
+  "run_id": "1791791145",
+  "client": "Geth/PureChain-Idle-2/v1.13.15-stable-e735e838/linux-amd64/go1.21.12",
+  "finished": "2026-10-12 16:51:52"
+}

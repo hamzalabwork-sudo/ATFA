@@ -1,0 +1,78 @@
+\begin{tabular}{lrllrrlrr}
+\toprule
+scenario & level & metric & comparator & atfa\_mean & comparator\_mean & atfa\_better\_in & p & p\_holm \\
+\midrule
+id & 0.050000 & fvs & ATFA trust=beta & 4103.807500 & 6443.022500 & 9/20 & 0.220900 & 0.220900 \\
+id & 0.050000 & fvs & B2 fixed amount threshold & 4103.807500 & 38425.290000 & 19/20 & 0.000000 & 0.000000 \\
+id & 0.050000 & fvs & B3 detector only & 4103.807500 & 6839.637500 & 14/20 & 0.010800 & 0.021700 \\
+id & 0.050000 & total\_cost & ATFA trust=beta & 13498.162500 & 16787.762500 & 13/20 & 0.063700 & 0.127400 \\
+id & 0.050000 & total\_cost & B2 fixed amount threshold & 13498.162500 & 51256.540000 & 19/20 & 0.000000 & 0.000000 \\
+id & 0.050000 & total\_cost & B3 detector only & 13498.162500 & 14951.542500 & 8/20 & 0.956300 & 0.956300 \\
+id & 0.100000 & fvs & ATFA trust=beta & 3926.695000 & 5156.572500 & 11/20 & 0.197800 & 0.197800 \\
+id & 0.100000 & fvs & B2 fixed amount threshold & 3926.695000 & 76351.382500 & 20/20 & 0.000000 & 0.000000 \\
+id & 0.100000 & fvs & B3 detector only & 3926.695000 & 5363.672500 & 16/20 & 0.015300 & 0.030600 \\
+id & 0.100000 & total\_cost & ATFA trust=beta & 20474.005000 & 22951.362500 & 15/20 & 0.058300 & 0.116500 \\
+id & 0.100000 & total\_cost & B2 fixed amount threshold & 20474.005000 & 89077.632500 & 20/20 & 0.000000 & 0.000000 \\
+id & 0.100000 & total\_cost & B3 detector only & 20474.005000 & 21747.627500 & 10/20 & 0.452400 & 0.452400 \\
+id & 0.200000 & fvs & ATFA trust=beta & 10595.357500 & 12789.992500 & 17/20 & 0.000900 & 0.001700 \\
+id & 0.200000 & fvs & B2 fixed amount threshold & 10595.357500 & 160243.467500 & 20/20 & 0.000000 & 0.000000 \\
+id & 0.200000 & fvs & B3 detector only & 10595.357500 & 11144.065000 & 13/20 & 0.348800 & 0.348800 \\
+id & 0.200000 & total\_cost & ATFA trust=beta & 30075.452500 & 32626.157500 & 13/20 & 0.053200 & 0.106300 \\
+id & 0.200000 & total\_cost & B2 fixed amount threshold & 30075.452500 & 173212.217500 & 20/20 & 0.000000 & 0.000000 \\
+id & 0.200000 & total\_cost & B3 detector only & 30075.452500 & 30943.415000 & 11/20 & 0.570600 & 0.570600 \\
+id & 0.300000 & fvs & ATFA trust=beta & 15831.895000 & 16154.640000 & 9/20 & 0.898300 & 1.000000 \\
+id & 0.300000 & fvs & B2 fixed amount threshold & 15831.895000 & 230163.325000 & 20/20 & 0.000000 & 0.000000 \\
+id & 0.300000 & fvs & B3 detector only & 15831.895000 & 17280.567500 & 10/20 & 0.545900 & 1.000000 \\
+id & 0.300000 & total\_cost & ATFA trust=beta & 39947.330000 & 41691.265000 & 12/20 & 0.189300 & 0.378700 \\
+id & 0.300000 & total\_cost & B2 fixed amount threshold & 39947.330000 & 242673.325000 & 20/20 & 0.000000 & 0.000000 \\
+id & 0.300000 & total\_cost & B3 detector only & 39947.330000 & 42257.347500 & 11/20 & 0.230500 & 0.378700 \\
+ood\_asset & 0.200000 & fvs & ATFA trust=beta & 3483.110000 & 4457.830000 & 3/5 & 0.250000 & 0.500000 \\
+ood\_asset & 0.200000 & fvs & B2 fixed amount threshold & 3483.110000 & 38890.060000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_asset & 0.200000 & fvs & B3 detector only & 3483.110000 & 4092.990000 & 3/5 & 0.625000 & 0.625000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA trust=beta & 8117.350000 & 9192.390000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_asset & 0.200000 & total\_cost & B2 fixed amount threshold & 8117.350000 & 43165.060000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_asset & 0.200000 & total\_cost & B3 detector only & 8117.350000 & 9183.490000 & 4/5 & 0.125000 & 0.187500 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA trust=beta & 15981.550000 & 18884.810000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_forged & 0.200000 & fvs & B2 fixed amount threshold & 15981.550000 & 148834.420000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_forged & 0.200000 & fvs & B3 detector only & 15981.550000 & 16310.030000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA trust=beta & 40497.170000 & 38759.170000 & 2/5 & 0.625000 & 0.625000 \\
+ood\_family\_forged & 0.200000 & total\_cost & B2 fixed amount threshold & 40497.170000 & 161154.420000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_forged & 0.200000 & total\_cost & B3 detector only & 40497.170000 & 35371.890000 & 0/5 & 0.062500 & 0.187500 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA trust=beta & 14706.650000 & 14703.700000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & B2 fixed amount threshold & 14706.650000 & 119011.950000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_gradual & 0.200000 & fvs & B3 detector only & 14706.650000 & 14744.020000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA trust=beta & 30009.150000 & 32155.220000 & 4/5 & 0.125000 & 0.250000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B2 fixed amount threshold & 30009.150000 & 132161.950000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B3 detector only & 30009.150000 & 29545.540000 & 3/5 & 0.812500 & 0.812500 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA trust=beta & 14554.760000 & 16669.270000 & 3/5 & 0.312500 & 0.625000 \\
+ood\_family\_inflation & 0.200000 & fvs & B2 fixed amount threshold & 14554.760000 & 148998.160000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_inflation & 0.200000 & fvs & B3 detector only & 14554.760000 & 13265.410000 & 2/5 & 0.437500 & 0.625000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA trust=beta & 33917.980000 & 41142.230000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B2 fixed amount threshold & 33917.980000 & 161653.160000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B3 detector only & 33917.980000 & 30756.710000 & 0/5 & 0.062500 & 0.187500 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA trust=beta & 15661.300000 & 18043.540000 & 4/5 & 0.125000 & 0.250000 \\
+ood\_family\_on\_off & 0.200000 & fvs & B2 fixed amount threshold & 15661.300000 & 148365.080000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_on\_off & 0.200000 & fvs & B3 detector only & 15661.300000 & 16209.510000 & 2/5 & 0.812500 & 0.812500 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA trust=beta & 35672.980000 & 39145.480000 & 3/5 & 0.312500 & 0.625000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B2 fixed amount threshold & 35672.980000 & 160800.080000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B3 detector only & 35672.980000 & 35894.710000 & 2/5 & 0.812500 & 0.812500 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA trust=beta & 21839.810000 & 23410.260000 & 4/5 & 0.312500 & 0.625000 \\
+ood\_family\_replay & 0.200000 & fvs & B2 fixed amount threshold & 21839.810000 & 158381.370000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_replay & 0.200000 & fvs & B3 detector only & 21839.810000 & 22044.420000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA trust=beta & 42270.410000 & 44887.400000 & 4/5 & 0.187500 & 0.375000 \\
+ood\_family\_replay & 0.200000 & total\_cost & B2 fixed amount threshold & 42270.410000 & 170716.370000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_family\_replay & 0.200000 & total\_cost & B3 detector only & 42270.410000 & 42648.220000 & 2/5 & 0.812500 & 0.812500 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA trust=beta & 16769.000000 & 19317.670000 & 4/5 & 0.125000 & 0.250000 \\
+ood\_intensity\_high & 0.200000 & fvs & B2 fixed amount threshold & 16769.000000 & 166833.860000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_intensity\_high & 0.200000 & fvs & B3 detector only & 16769.000000 & 16540.830000 & 2/5 & 0.812500 & 0.812500 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA trust=beta & 40056.200000 & 40038.010000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B2 fixed amount threshold & 40056.200000 & 181113.860000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B3 detector only & 40056.200000 & 37308.170000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA trust=beta & 9050.190000 & 10967.260000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_intensity\_low & 0.200000 & fvs & B2 fixed amount threshold & 9050.190000 & 92597.120000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_intensity\_low & 0.200000 & fvs & B3 detector only & 9050.190000 & 9328.980000 & 3/5 & 0.812500 & 0.812500 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA trust=beta & 31066.850000 & 31410.040000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B2 fixed amount threshold & 31066.850000 & 103716.880000 & 5/5 & 0.062500 & 0.187500 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B3 detector only & 31066.850000 & 31560.360000 & 3/5 & 1.000000 & 1.000000 \\
+\bottomrule
+\end{tabular}

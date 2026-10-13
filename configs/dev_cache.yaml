@@ -1,0 +1,14 @@
+# Development: cache detector scores on SELECTION worlds (seeds 100-105) to compare authorisation rules.
+base: default.yaml
+
+detectors:
+  enabled: [xgboost, tcn, tcn_xgb]
+
+experiment:
+  seeds: [100, 101, 102, 103, 104, 105]
+  workers: 4
+  sensitivity_seeds: []
+  cache_dir: results/dev_cache/pkl
+  scenarios:
+    id:                 {split: chronological, levels: [0.10, 0.20, 0.30]}
+    ood_intensity_low:  {split: chronological, levels: [0.20], alpha_multiplier: 0.4}

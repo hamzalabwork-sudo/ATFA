@@ -1,0 +1,9 @@
+{
+  "tcn_params": 24257,
+  "tcn_state_bytes": 103655,
+  "xgboost_model_bytes": 686831,
+  "ensemble_stacker_bytes": 749,
+  "per_asset_state_bytes": 3280,
+  "per_asset_state_note": "window (W x features, float32) + trust (alpha, beta) + 28-day history",
+  "process_rss_mb": 501.2734375
+}

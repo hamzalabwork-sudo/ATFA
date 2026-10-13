@@ -1,0 +1,3 @@
+experiment,records_per_tx,offered_tps,senders,accounts,n_tx,sent,ok,failed_or_timeout,send_errors,achieved_send_tps,throughput_tps,throughput_records_per_s,latency_ms_p50,latency_ms_p95,latency_ms_p99,blocks_used,mean_tx_per_block,not_seen_in_window,found_by_receipt_check,observe_timeout_s,first_error
+E5 multi-account (1 sender),1,100.0,8,1,2000,2000,2000,0,0,100.05597504201826,16.56875475401198,16.56875475401198,52339.09630775452,97317.49242544174,100150.4275393486,121,16.644628099173552,0,0,300.0,
+E5 multi-account (4 senders),1,100.0,8,4,2000,2000,2000,0,0,100.11112030175228,55.7609585118131,55.7609585118131,8656.314134597778,13875.032949447628,14679.10161972046,34,58.05882352941177,27,27,300.0,

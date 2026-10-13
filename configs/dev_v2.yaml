@@ -1,0 +1,12 @@
+# Development run for the v2 fixes on SELECTION worlds only (seeds 100-102, never used for evaluation).
+# Used to check the fixes and to fix the primary detector before the confirmatory run.
+base: default.yaml
+
+experiment:
+  seeds: [100, 101, 102]
+  workers: 4
+  sensitivity_seeds: []
+  scenarios:
+    id:                 {split: chronological, levels: [0.10, 0.20]}
+    ood_family_forged:  {split: chronological, levels: [0.20], holdout_family: forged_identity}
+    ood_intensity_low:  {split: chronological, levels: [0.20], alpha_multiplier: 0.4}

@@ -1,0 +1,678 @@
+\begin{tabular}{lrllrrlrr}
+\toprule
+scenario & level & metric & comparator & atfa\_mean & comparator\_mean & atfa\_better\_in & p & p\_holm \\
+\midrule
+id & 0.050000 & fvs & ATFA (provisional thresholds) & 4103.807500 & 6775.177500 & 12/20 & 0.055700 & 1.000000 \\
+id & 0.050000 & fvs & ATFA +exposure term F (noisy-OR) & 4103.807500 & 3260.517500 & 13/20 & 0.246100 & 1.000000 \\
+id & 0.050000 & fvs & ATFA +random audits & 4103.807500 & 3539.280000 & 3/20 & 0.715000 & 1.000000 \\
+id & 0.050000 & fvs & ATFA -asymmetric evidence & 4103.807500 & 3915.165000 & 7/20 & 0.789700 & 1.000000 \\
+id & 0.050000 & fvs & ATFA -detector (s=0) & 4103.807500 & 34315.562500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & fvs & ATFA -exposure-weighted trust & 4103.807500 & 4174.490000 & 8/20 & 0.109700 & 1.000000 \\
+id & 0.050000 & fvs & ATFA -hard rules & 4103.807500 & 6441.180000 & 8/20 & 0.038200 & 0.763000 \\
+id & 0.050000 & fvs & ATFA -low-trust gate & 4103.807500 & 4121.687500 & 1/20 & 0.317300 & 1.000000 \\
+id & 0.050000 & fvs & ATFA -verification feedback & 4103.807500 & 6254.255000 & 7/20 & 0.209400 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=hybrid & 4103.807500 & 4336.030000 & 10/20 & 0.743900 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=iforest & 4103.807500 & 5477.752500 & 13/20 & 0.083600 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=lstm & 4103.807500 & 3660.092500 & 11/20 & 0.647500 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=lstm\_ae & 4103.807500 & 3970.080000 & 12/20 & 0.245500 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=rules & 4103.807500 & 3513.287500 & 10/20 & 0.674200 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=tcn & 4103.807500 & 6154.792500 & 12/20 & 0.306100 & 1.000000 \\
+id & 0.050000 & fvs & ATFA detector=xgboost & 4103.807500 & 1725.907500 & 7/20 & 0.469100 & 1.000000 \\
+id & 0.050000 & fvs & ATFA expected-loss risk (lambda=0.7) & 4103.807500 & 3017.572500 & 7/20 & 0.432600 & 1.000000 \\
+id & 0.050000 & fvs & ATFA trust=beta & 4103.807500 & 6443.022500 & 9/20 & 0.220900 & 1.000000 \\
+id & 0.050000 & fvs & ATFA trust=ewma & 4103.807500 & 6568.495000 & 11/20 & 0.009000 & 0.215600 \\
+id & 0.050000 & fvs & ATFA trust=none & 4103.807500 & 6839.637500 & 14/20 & 0.010800 & 0.249400 \\
+id & 0.050000 & fvs & ATFA trust=static & 4103.807500 & 6596.335000 & 14/20 & 0.024900 & 0.523000 \\
+id & 0.050000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 4103.807500 & 2679.230000 & 13/20 & 0.170100 & 1.000000 \\
+id & 0.050000 & fvs & ATFA weighted-sum risk & 4103.807500 & 4501.537500 & 14/20 & 0.052600 & 0.999900 \\
+id & 0.050000 & fvs & B0 approve all (smart contract only) & 4103.807500 & 74558.035000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & fvs & B1 hard rules only & 4103.807500 & 65241.880000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & fvs & B2 fixed amount threshold & 4103.807500 & 38425.290000 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & fvs & B3 detector only & 4103.807500 & 6839.637500 & 14/20 & 0.010800 & 0.249400 \\
+id & 0.050000 & fvs & B4 trust only & 4103.807500 & 5457.442500 & 14/20 & 0.058300 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA (provisional thresholds) & 13498.162500 & 13983.132500 & 11/20 & 0.784100 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA +exposure term F (noisy-OR) & 13498.162500 & 12942.912500 & 11/20 & 1.000000 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA +random audits & 13498.162500 & 16731.620000 & 18/20 & 0.013700 & 0.299600 \\
+id & 0.050000 & total\_cost & ATFA -asymmetric evidence & 13498.162500 & 12868.435000 & 10/20 & 0.545900 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA -detector (s=0) & 13498.162500 & 39295.417500 & 18/20 & 0.000000 & 0.000200 \\
+id & 0.050000 & total\_cost & ATFA -exposure-weighted trust & 13498.162500 & 13159.535000 & 7/20 & 0.245500 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA -hard rules & 13498.162500 & 15399.695000 & 5/20 & 0.649600 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA -low-trust gate & 13498.162500 & 13456.682500 & 0/20 & 0.179700 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA -verification feedback & 13498.162500 & 18432.420000 & 18/20 & 0.003200 & 0.075700 \\
+id & 0.050000 & total\_cost & ATFA detector=hybrid & 13498.162500 & 16235.580000 & 14/20 & 0.048400 & 0.920400 \\
+id & 0.050000 & total\_cost & ATFA detector=iforest & 13498.162500 & 19280.317500 & 16/20 & 0.013600 & 0.299600 \\
+id & 0.050000 & total\_cost & ATFA detector=lstm & 13498.162500 & 16003.142500 & 14/20 & 0.097300 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA detector=lstm\_ae & 13498.162500 & 13638.095000 & 15/20 & 0.409100 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA detector=rules & 13498.162500 & 14384.427500 & 14/20 & 0.294300 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA detector=tcn & 13498.162500 & 16900.417500 & 15/20 & 0.032800 & 0.655400 \\
+id & 0.050000 & total\_cost & ATFA detector=xgboost & 13498.162500 & 11335.887500 & 13/20 & 0.869500 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 13498.162500 & 12189.997500 & 12/20 & 0.869500 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA trust=beta & 13498.162500 & 16787.762500 & 13/20 & 0.063700 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA trust=ewma & 13498.162500 & 16817.810000 & 13/20 & 0.063700 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA trust=none & 13498.162500 & 14951.542500 & 8/20 & 0.956300 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA trust=static & 13498.162500 & 14637.785000 & 7/20 & 0.701200 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 13498.162500 & 12864.415000 & 11/20 & 0.812400 & 1.000000 \\
+id & 0.050000 & total\_cost & ATFA weighted-sum risk & 13498.162500 & 13099.897500 & 11/20 & 0.956300 & 1.000000 \\
+id & 0.050000 & total\_cost & B0 approve all (smart contract only) & 13498.162500 & 74558.035000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & total\_cost & B1 hard rules only & 13498.162500 & 65241.880000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & total\_cost & B2 fixed amount threshold & 13498.162500 & 51256.540000 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.050000 & total\_cost & B3 detector only & 13498.162500 & 14951.542500 & 8/20 & 0.956300 & 1.000000 \\
+id & 0.050000 & total\_cost & B4 trust only & 13498.162500 & 17873.767500 & 15/20 & 0.010700 & 0.245800 \\
+id & 0.100000 & fvs & ATFA (provisional thresholds) & 3926.695000 & 4025.172500 & 10/20 & 0.711200 & 1.000000 \\
+id & 0.100000 & fvs & ATFA +exposure term F (noisy-OR) & 3926.695000 & 5180.817500 & 16/20 & 0.010700 & 0.181700 \\
+id & 0.100000 & fvs & ATFA +random audits & 3926.695000 & 3828.367500 & 2/20 & 0.115900 & 1.000000 \\
+id & 0.100000 & fvs & ATFA -asymmetric evidence & 3926.695000 & 3584.137500 & 5/20 & 0.214500 & 1.000000 \\
+id & 0.100000 & fvs & ATFA -detector (s=0) & 3926.695000 & 66727.450000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & fvs & ATFA -exposure-weighted trust & 3926.695000 & 3950.970000 & 9/20 & 0.495500 & 1.000000 \\
+id & 0.100000 & fvs & ATFA -hard rules & 3926.695000 & 3769.780000 & 1/20 & 0.074700 & 0.822100 \\
+id & 0.100000 & fvs & ATFA -low-trust gate & 3926.695000 & 3926.695000 & 0/20 & 1.000000 & 1.000000 \\
+id & 0.100000 & fvs & ATFA -verification feedback & 3926.695000 & 6061.585000 & 16/20 & 0.000500 & 0.009600 \\
+id & 0.100000 & fvs & ATFA detector=hybrid & 3926.695000 & 4768.687500 & 13/20 & 0.132700 & 1.000000 \\
+id & 0.100000 & fvs & ATFA detector=iforest & 3926.695000 & 21045.735000 & 18/20 & 0.000000 & 0.000200 \\
+id & 0.100000 & fvs & ATFA detector=lstm & 3926.695000 & 6501.137500 & 13/20 & 0.021500 & 0.300800 \\
+id & 0.100000 & fvs & ATFA detector=lstm\_ae & 3926.695000 & 11277.672500 & 15/20 & 0.000700 & 0.014200 \\
+id & 0.100000 & fvs & ATFA detector=rules & 3926.695000 & 15780.885000 & 18/20 & 0.000000 & 0.001000 \\
+id & 0.100000 & fvs & ATFA detector=tcn & 3926.695000 & 6783.960000 & 15/20 & 0.002000 & 0.035700 \\
+id & 0.100000 & fvs & ATFA detector=xgboost & 3926.695000 & 4052.942500 & 9/20 & 0.616500 & 1.000000 \\
+id & 0.100000 & fvs & ATFA expected-loss risk (lambda=0.7) & 3926.695000 & 3815.565000 & 5/20 & 0.191400 & 1.000000 \\
+id & 0.100000 & fvs & ATFA trust=beta & 3926.695000 & 5156.572500 & 11/20 & 0.197800 & 1.000000 \\
+id & 0.100000 & fvs & ATFA trust=ewma & 3926.695000 & 4700.367500 & 11/20 & 0.085400 & 0.853900 \\
+id & 0.100000 & fvs & ATFA trust=none & 3926.695000 & 5363.672500 & 16/20 & 0.015300 & 0.245000 \\
+id & 0.100000 & fvs & ATFA trust=static & 3926.695000 & 5035.567500 & 16/20 & 0.021500 & 0.300800 \\
+id & 0.100000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 3926.695000 & 4477.062500 & 15/20 & 0.053200 & 0.638000 \\
+id & 0.100000 & fvs & ATFA weighted-sum risk & 3926.695000 & 5336.505000 & 16/20 & 0.000900 & 0.016200 \\
+id & 0.100000 & fvs & B0 approve all (smart contract only) & 3926.695000 & 140287.250000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & fvs & B1 hard rules only & 3926.695000 & 121777.057500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & fvs & B2 fixed amount threshold & 3926.695000 & 76351.382500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & fvs & B3 detector only & 3926.695000 & 5363.672500 & 16/20 & 0.015300 & 0.245000 \\
+id & 0.100000 & fvs & B4 trust only & 3926.695000 & 14927.462500 & 18/20 & 0.000000 & 0.000300 \\
+id & 0.100000 & total\_cost & ATFA (provisional thresholds) & 20474.005000 & 19426.732500 & 7/20 & 0.171200 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA +exposure term F (noisy-OR) & 20474.005000 & 22365.352500 & 12/20 & 0.165000 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA +random audits & 20474.005000 & 24781.557500 & 20/20 & 0.000100 & 0.001800 \\
+id & 0.100000 & total\_cost & ATFA -asymmetric evidence & 20474.005000 & 21340.397500 & 11/20 & 0.368300 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA -detector (s=0) & 20474.005000 & 77005.085000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & total\_cost & ATFA -exposure-weighted trust & 20474.005000 & 20371.845000 & 6/20 & 0.570600 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA -hard rules & 20474.005000 & 20200.220000 & 6/20 & 0.266800 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA -low-trust gate & 20474.005000 & 20384.005000 & 0/20 & 0.317300 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA -verification feedback & 20474.005000 & 24662.820000 & 17/20 & 0.000100 & 0.002500 \\
+id & 0.100000 & total\_cost & ATFA detector=hybrid & 20474.005000 & 23669.982500 & 17/20 & 0.000500 & 0.008700 \\
+id & 0.100000 & total\_cost & ATFA detector=iforest & 20474.005000 & 39634.390000 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & total\_cost & ATFA detector=lstm & 20474.005000 & 26063.082500 & 17/20 & 0.000900 & 0.014500 \\
+id & 0.100000 & total\_cost & ATFA detector=lstm\_ae & 20474.005000 & 29981.872500 & 19/20 & 0.000000 & 0.000400 \\
+id & 0.100000 & total\_cost & ATFA detector=rules & 20474.005000 & 32351.440000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & total\_cost & ATFA detector=tcn & 20474.005000 & 24606.520000 & 15/20 & 0.001400 & 0.022900 \\
+id & 0.100000 & total\_cost & ATFA detector=xgboost & 20474.005000 & 21964.002500 & 16/20 & 0.003200 & 0.044100 \\
+id & 0.100000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 20474.005000 & 21188.160000 & 14/20 & 0.165000 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA trust=beta & 20474.005000 & 22951.362500 & 15/20 & 0.058300 & 0.757400 \\
+id & 0.100000 & total\_cost & ATFA trust=ewma & 20474.005000 & 24207.957500 & 16/20 & 0.001400 & 0.022900 \\
+id & 0.100000 & total\_cost & ATFA trust=none & 20474.005000 & 21747.627500 & 10/20 & 0.452400 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA trust=static & 20474.005000 & 21723.867500 & 10/20 & 0.595800 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 20474.005000 & 20600.792500 & 12/20 & 0.869500 & 1.000000 \\
+id & 0.100000 & total\_cost & ATFA weighted-sum risk & 20474.005000 & 19601.265000 & 8/20 & 0.348800 & 1.000000 \\
+id & 0.100000 & total\_cost & B0 approve all (smart contract only) & 20474.005000 & 140287.250000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & total\_cost & B1 hard rules only & 20474.005000 & 121777.057500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & total\_cost & B2 fixed amount threshold & 20474.005000 & 89077.632500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.100000 & total\_cost & B3 detector only & 20474.005000 & 21747.627500 & 10/20 & 0.452400 & 1.000000 \\
+id & 0.100000 & total\_cost & B4 trust only & 20474.005000 & 33967.857500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & ATFA (provisional thresholds) & 10595.357500 & 7476.310000 & 0/20 & 0.000100 & 0.002500 \\
+id & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 10595.357500 & 11737.602500 & 13/20 & 0.075900 & 0.758500 \\
+id & 0.200000 & fvs & ATFA +random audits & 10595.357500 & 10645.632500 & 8/20 & 0.917600 & 1.000000 \\
+id & 0.200000 & fvs & ATFA -asymmetric evidence & 10595.357500 & 9318.197500 & 4/20 & 0.005500 & 0.065900 \\
+id & 0.200000 & fvs & ATFA -detector (s=0) & 10595.357500 & 136794.880000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & ATFA -exposure-weighted trust & 10595.357500 & 9731.115000 & 7/20 & 0.077800 & 0.758500 \\
+id & 0.200000 & fvs & ATFA -hard rules & 10595.357500 & 9217.147500 & 4/20 & 0.010600 & 0.116500 \\
+id & 0.200000 & fvs & ATFA -low-trust gate & 10595.357500 & 10559.560000 & 1/20 & 0.654700 & 1.000000 \\
+id & 0.200000 & fvs & ATFA -verification feedback & 10595.357500 & 15652.702500 & 19/20 & 0.000100 & 0.001300 \\
+id & 0.200000 & fvs & ATFA detector=hybrid & 10595.357500 & 13199.950000 & 16/20 & 0.000900 & 0.013600 \\
+id & 0.200000 & fvs & ATFA detector=iforest & 10595.357500 & 62730.225000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & ATFA detector=lstm & 10595.357500 & 14199.870000 & 16/20 & 0.002000 & 0.027800 \\
+id & 0.200000 & fvs & ATFA detector=lstm\_ae & 10595.357500 & 39901.175000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & ATFA detector=rules & 10595.357500 & 44993.617500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & ATFA detector=tcn & 10595.357500 & 13257.410000 & 16/20 & 0.000700 & 0.012000 \\
+id & 0.200000 & fvs & ATFA detector=xgboost & 10595.357500 & 12361.080000 & 13/20 & 0.082600 & 0.758500 \\
+id & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 10595.357500 & 10023.290000 & 6/20 & 0.368300 & 1.000000 \\
+id & 0.200000 & fvs & ATFA trust=beta & 10595.357500 & 12789.992500 & 17/20 & 0.000900 & 0.013600 \\
+id & 0.200000 & fvs & ATFA trust=ewma & 10595.357500 & 12842.942500 & 17/20 & 0.000100 & 0.002500 \\
+id & 0.200000 & fvs & ATFA trust=none & 10595.357500 & 11144.065000 & 13/20 & 0.348800 & 1.000000 \\
+id & 0.200000 & fvs & ATFA trust=static & 10595.357500 & 11324.092500 & 13/20 & 0.261100 & 1.000000 \\
+id & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 10595.357500 & 12076.090000 & 17/20 & 0.003700 & 0.047500 \\
+id & 0.200000 & fvs & ATFA weighted-sum risk & 10595.357500 & 11314.917500 & 15/20 & 0.075900 & 0.758500 \\
+id & 0.200000 & fvs & B0 approve all (smart contract only) & 10595.357500 & 264519.810000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & B1 hard rules only & 10595.357500 & 235665.515000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & B2 fixed amount threshold & 10595.357500 & 160243.467500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & fvs & B3 detector only & 10595.357500 & 11144.065000 & 13/20 & 0.348800 & 1.000000 \\
+id & 0.200000 & fvs & B4 trust only & 10595.357500 & 65175.565000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & ATFA (provisional thresholds) & 30075.452500 & 36559.360000 & 17/20 & 0.001900 & 0.035000 \\
+id & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 30075.452500 & 29118.207500 & 9/20 & 0.430400 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA +random audits & 30075.452500 & 33749.987500 & 19/20 & 0.001000 & 0.019300 \\
+id & 0.200000 & total\_cost & ATFA -asymmetric evidence & 30075.452500 & 28139.417500 & 5/20 & 0.017200 & 0.240500 \\
+id & 0.200000 & total\_cost & ATFA -detector (s=0) & 30075.452500 & 150040.355000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 30075.452500 & 29045.370000 & 7/20 & 0.165000 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA -hard rules & 30075.452500 & 28969.477500 & 6/20 & 0.097300 & 0.875800 \\
+id & 0.200000 & total\_cost & ATFA -low-trust gate & 30075.452500 & 29808.100000 & 0/20 & 0.043100 & 0.517400 \\
+id & 0.200000 & total\_cost & ATFA -verification feedback & 30075.452500 & 38918.202500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & ATFA detector=hybrid & 30075.452500 & 31468.635000 & 13/20 & 0.230500 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA detector=iforest & 30075.452500 & 81459.965000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & ATFA detector=lstm & 30075.452500 & 34869.880000 & 16/20 & 0.010700 & 0.160300 \\
+id & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 30075.452500 & 58645.425000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & ATFA detector=rules & 30075.452500 & 60330.372500 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & ATFA detector=tcn & 30075.452500 & 31683.585000 & 12/20 & 0.245500 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA detector=xgboost & 30075.452500 & 32443.700000 & 14/20 & 0.053200 & 0.584900 \\
+id & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 30075.452500 & 30789.440000 & 12/20 & 0.330000 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA trust=beta & 30075.452500 & 32626.157500 & 13/20 & 0.053200 & 0.584900 \\
+id & 0.200000 & total\_cost & ATFA trust=ewma & 30075.452500 & 32030.737500 & 14/20 & 0.008300 & 0.141200 \\
+id & 0.200000 & total\_cost & ATFA trust=none & 30075.452500 & 30943.415000 & 11/20 & 0.570600 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA trust=static & 30075.452500 & 31343.847500 & 10/20 & 0.498000 & 1.000000 \\
+id & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 30075.452500 & 32452.420000 & 14/20 & 0.029600 & 0.384500 \\
+id & 0.200000 & total\_cost & ATFA weighted-sum risk & 30075.452500 & 31666.792500 & 16/20 & 0.009400 & 0.151000 \\
+id & 0.200000 & total\_cost & B0 approve all (smart contract only) & 30075.452500 & 264519.810000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & B1 hard rules only & 30075.452500 & 235665.515000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & B2 fixed amount threshold & 30075.452500 & 173212.217500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.200000 & total\_cost & B3 detector only & 30075.452500 & 30943.415000 & 11/20 & 0.570600 & 1.000000 \\
+id & 0.200000 & total\_cost & B4 trust only & 30075.452500 & 82643.985000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA (provisional thresholds) & 15831.895000 & 8754.625000 & 0/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA +exposure term F (noisy-OR) & 15831.895000 & 16074.687500 & 13/20 & 0.647700 & 1.000000 \\
+id & 0.300000 & fvs & ATFA +random audits & 15831.895000 & 15234.030000 & 7/20 & 0.233000 & 1.000000 \\
+id & 0.300000 & fvs & ATFA -asymmetric evidence & 15831.895000 & 13585.950000 & 3/20 & 0.000300 & 0.003700 \\
+id & 0.300000 & fvs & ATFA -detector (s=0) & 15831.895000 & 278810.682500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA -exposure-weighted trust & 15831.895000 & 14294.812500 & 4/20 & 0.013600 & 0.149800 \\
+id & 0.300000 & fvs & ATFA -hard rules & 15831.895000 & 12912.552500 & 3/20 & 0.000000 & 0.000800 \\
+id & 0.300000 & fvs & ATFA -low-trust gate & 15831.895000 & 14641.010000 & 4/20 & 0.017400 & 0.156400 \\
+id & 0.300000 & fvs & ATFA -verification feedback & 15831.895000 & 18896.050000 & 16/20 & 0.000500 & 0.006300 \\
+id & 0.300000 & fvs & ATFA detector=hybrid & 15831.895000 & 23324.545000 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA detector=iforest & 15831.895000 & 124253.675000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA detector=lstm & 15831.895000 & 28704.962500 & 19/20 & 0.000000 & 0.000200 \\
+id & 0.300000 & fvs & ATFA detector=lstm\_ae & 15831.895000 & 90557.497500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA detector=rules & 15831.895000 & 92576.187500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA detector=tcn & 15831.895000 & 23473.172500 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & ATFA detector=xgboost & 15831.895000 & 18475.125000 & 16/20 & 0.002000 & 0.023800 \\
+id & 0.300000 & fvs & ATFA expected-loss risk (lambda=0.7) & 15831.895000 & 17036.917500 & 13/20 & 0.019200 & 0.156400 \\
+id & 0.300000 & fvs & ATFA trust=beta & 15831.895000 & 16154.640000 & 9/20 & 0.898300 & 1.000000 \\
+id & 0.300000 & fvs & ATFA trust=ewma & 15831.895000 & 17647.910000 & 13/20 & 0.024000 & 0.167700 \\
+id & 0.300000 & fvs & ATFA trust=none & 15831.895000 & 17280.567500 & 10/20 & 0.545900 & 1.000000 \\
+id & 0.300000 & fvs & ATFA trust=static & 15831.895000 & 17431.340000 & 12/20 & 0.368300 & 1.000000 \\
+id & 0.300000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 15831.895000 & 17297.542500 & 15/20 & 0.013600 & 0.149800 \\
+id & 0.300000 & fvs & ATFA weighted-sum risk & 15831.895000 & 20719.000000 & 19/20 & 0.000100 & 0.001200 \\
+id & 0.300000 & fvs & B0 approve all (smart contract only) & 15831.895000 & 393962.042500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & B1 hard rules only & 15831.895000 & 341202.717500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & B2 fixed amount threshold & 15831.895000 & 230163.325000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & fvs & B3 detector only & 15831.895000 & 17280.567500 & 10/20 & 0.545900 & 1.000000 \\
+id & 0.300000 & fvs & B4 trust only & 15831.895000 & 104727.717500 & 18/20 & 0.000000 & 0.000300 \\
+id & 0.300000 & total\_cost & ATFA (provisional thresholds) & 39947.330000 & 51009.870000 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA +exposure term F (noisy-OR) & 39947.330000 & 40326.897500 & 10/20 & 0.812400 & 0.946700 \\
+id & 0.300000 & total\_cost & ATFA +random audits & 39947.330000 & 43675.340000 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA -asymmetric evidence & 39947.330000 & 37569.000000 & 2/20 & 0.004900 & 0.038900 \\
+id & 0.300000 & total\_cost & ATFA -detector (s=0) & 39947.330000 & 287283.247500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA -exposure-weighted trust & 39947.330000 & 37565.992500 & 4/20 & 0.002700 & 0.027100 \\
+id & 0.300000 & total\_cost & ATFA -hard rules & 39947.330000 & 36633.152500 & 4/20 & 0.002700 & 0.027100 \\
+id & 0.300000 & total\_cost & ATFA -low-trust gate & 39947.330000 & 36738.810000 & 1/20 & 0.000700 & 0.009300 \\
+id & 0.300000 & total\_cost & ATFA -verification feedback & 39947.330000 & 51914.760000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA detector=hybrid & 39947.330000 & 47025.955000 & 18/20 & 0.000100 & 0.001200 \\
+id & 0.300000 & total\_cost & ATFA detector=iforest & 39947.330000 & 149034.575000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA detector=lstm & 39947.330000 & 56551.607500 & 19/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA detector=lstm\_ae & 39947.330000 & 108540.807500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA detector=rules & 39947.330000 & 110001.277500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & ATFA detector=tcn & 39947.330000 & 47089.822500 & 18/20 & 0.000200 & 0.002300 \\
+id & 0.300000 & total\_cost & ATFA detector=xgboost & 39947.330000 & 43701.620000 & 17/20 & 0.000900 & 0.010200 \\
+id & 0.300000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 39947.330000 & 42472.167500 & 17/20 & 0.001000 & 0.011200 \\
+id & 0.300000 & total\_cost & ATFA trust=beta & 39947.330000 & 41691.265000 & 12/20 & 0.189300 & 0.946700 \\
+id & 0.300000 & total\_cost & ATFA trust=ewma & 39947.330000 & 43650.100000 & 15/20 & 0.010700 & 0.074800 \\
+id & 0.300000 & total\_cost & ATFA trust=none & 39947.330000 & 42257.347500 & 11/20 & 0.230500 & 0.946700 \\
+id & 0.300000 & total\_cost & ATFA trust=static & 39947.330000 & 42291.730000 & 12/20 & 0.245500 & 0.946700 \\
+id & 0.300000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 39947.330000 & 41628.262500 & 15/20 & 0.032800 & 0.196600 \\
+id & 0.300000 & total\_cost & ATFA weighted-sum risk & 39947.330000 & 45249.640000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & B0 approve all (smart contract only) & 39947.330000 & 393962.042500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & B1 hard rules only & 39947.330000 & 341202.717500 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & B2 fixed amount threshold & 39947.330000 & 242673.325000 & 20/20 & 0.000000 & 0.000100 \\
+id & 0.300000 & total\_cost & B3 detector only & 39947.330000 & 42257.347500 & 11/20 & 0.230500 & 0.946700 \\
+id & 0.300000 & total\_cost & B4 trust only & 39947.330000 & 131375.167500 & 20/20 & 0.000000 & 0.000100 \\
+ood\_asset & 0.200000 & fvs & ATFA (provisional thresholds) & 3483.110000 & 2741.340000 & 1/5 & 0.250000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 3483.110000 & 4001.050000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA +random audits & 3483.110000 & 3509.060000 & 1/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA -asymmetric evidence & 3483.110000 & 2771.810000 & 0/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA -detector (s=0) & 3483.110000 & 27550.480000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA -exposure-weighted trust & 3483.110000 & 2991.590000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA -hard rules & 3483.110000 & 4018.540000 & 1/5 & 0.875000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA -low-trust gate & 3483.110000 & 3461.260000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA -verification feedback & 3483.110000 & 5566.170000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=hybrid & 3483.110000 & 4240.190000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=iforest & 3483.110000 & 14329.050000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=lstm & 3483.110000 & 7980.940000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=lstm\_ae & 3483.110000 & 8108.550000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=rules & 3483.110000 & 9648.270000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=tcn & 3483.110000 & 3749.280000 & 2/5 & 0.875000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA detector=xgboost & 3483.110000 & 4067.400000 & 3/5 & 0.250000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 3483.110000 & 3322.130000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA trust=beta & 3483.110000 & 4457.830000 & 3/5 & 0.250000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA trust=ewma & 3483.110000 & 5293.200000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA trust=none & 3483.110000 & 4092.990000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA trust=static & 3483.110000 & 4516.420000 & 3/5 & 0.375000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 3483.110000 & 4775.010000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & ATFA weighted-sum risk & 3483.110000 & 4024.450000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & B0 approve all (smart contract only) & 3483.110000 & 61530.980000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & B1 hard rules only & 3483.110000 & 54908.110000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & B2 fixed amount threshold & 3483.110000 & 38890.060000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & B3 detector only & 3483.110000 & 4092.990000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & fvs & B4 trust only & 3483.110000 & 17248.270000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA (provisional thresholds) & 8117.350000 & 9644.760000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 8117.350000 & 8037.910000 & 1/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA +random audits & 8117.350000 & 9462.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA -asymmetric evidence & 8117.350000 & 8089.310000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA -detector (s=0) & 8117.350000 & 30436.120000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 8117.350000 & 7828.590000 & 2/5 & 0.312500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA -hard rules & 8117.350000 & 8826.980000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA -low-trust gate & 8117.350000 & 8159.200000 & 1/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA -verification feedback & 8117.350000 & 10698.370000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=hybrid & 8117.350000 & 9002.550000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=iforest & 8117.350000 & 18450.870000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=lstm & 8117.350000 & 12752.620000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 8117.350000 & 12820.730000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=rules & 8117.350000 & 13360.770000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=tcn & 8117.350000 & 8818.860000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA detector=xgboost & 8117.350000 & 8724.820000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 8117.350000 & 9062.650000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA trust=beta & 8117.350000 & 9192.390000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA trust=ewma & 8117.350000 & 9504.240000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA trust=none & 8117.350000 & 9183.490000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA trust=static & 8117.350000 & 9348.340000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 8117.350000 & 9490.850000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & ATFA weighted-sum risk & 8117.350000 & 8466.730000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & B0 approve all (smart contract only) & 8117.350000 & 61530.980000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & B1 hard rules only & 8117.350000 & 54908.110000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & B2 fixed amount threshold & 8117.350000 & 43165.060000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & B3 detector only & 8117.350000 & 9183.490000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_asset & 0.200000 & total\_cost & B4 trust only & 8117.350000 & 20639.990000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA (provisional thresholds) & 15981.550000 & 16424.960000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 15981.550000 & 18436.270000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA +random audits & 15981.550000 & 15810.460000 & 1/5 & 0.750000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA -asymmetric evidence & 15981.550000 & 15106.510000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA -detector (s=0) & 15981.550000 & 99935.150000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA -exposure-weighted trust & 15981.550000 & 15515.030000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA -hard rules & 15981.550000 & 17789.920000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA -low-trust gate & 15981.550000 & 15981.550000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA -verification feedback & 15981.550000 & 25379.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=hybrid & 15981.550000 & 17715.420000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=iforest & 15981.550000 & 48097.370000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=lstm & 15981.550000 & 19919.730000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=lstm\_ae & 15981.550000 & 28635.340000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=rules & 15981.550000 & 40823.280000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=tcn & 15981.550000 & 19612.040000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA detector=xgboost & 15981.550000 & 21135.800000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 15981.550000 & 15370.200000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA trust=beta & 15981.550000 & 18884.810000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA trust=ewma & 15981.550000 & 18351.970000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA trust=none & 15981.550000 & 16310.030000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA trust=static & 15981.550000 & 17516.410000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 15981.550000 & 17455.680000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & ATFA weighted-sum risk & 15981.550000 & 20948.530000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & B0 approve all (smart contract only) & 15981.550000 & 251721.440000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & B1 hard rules only & 15981.550000 & 223992.900000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & B2 fixed amount threshold & 15981.550000 & 148834.420000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & B3 detector only & 15981.550000 & 16310.030000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & fvs & B4 trust only & 15981.550000 & 39923.030000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA (provisional thresholds) & 40497.170000 & 41005.080000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 40497.170000 & 42169.530000 & 3/5 & 0.437500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA +random audits & 40497.170000 & 44258.920000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA -asymmetric evidence & 40497.170000 & 41799.070000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA -detector (s=0) & 40497.170000 & 116768.290000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 40497.170000 & 46123.270000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA -hard rules & 40497.170000 & 41492.300000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA -low-trust gate & 40497.170000 & 40497.170000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA -verification feedback & 40497.170000 & 47674.160000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=hybrid & 40497.170000 & 42205.520000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=iforest & 40497.170000 & 77050.950000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=lstm & 40497.170000 & 46016.150000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 40497.170000 & 50119.280000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=rules & 40497.170000 & 60763.700000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=tcn & 40497.170000 & 44357.380000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA detector=xgboost & 40497.170000 & 46228.480000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 40497.170000 & 39947.860000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA trust=beta & 40497.170000 & 38759.170000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA trust=ewma & 40497.170000 & 41137.870000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA trust=none & 40497.170000 & 35371.890000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA trust=static & 40497.170000 & 35981.590000 & 1/5 & 0.125000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 40497.170000 & 39949.800000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & ATFA weighted-sum risk & 40497.170000 & 38855.890000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & B0 approve all (smart contract only) & 40497.170000 & 251721.440000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & B1 hard rules only & 40497.170000 & 223992.900000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & B2 fixed amount threshold & 40497.170000 & 161154.420000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & B3 detector only & 40497.170000 & 35371.890000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_forged & 0.200000 & total\_cost & B4 trust only & 40497.170000 & 68995.030000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA (provisional thresholds) & 14706.650000 & 13248.270000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 14706.650000 & 18850.960000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA +random audits & 14706.650000 & 14555.910000 & 1/5 & 0.500000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA -asymmetric evidence & 14706.650000 & 13421.500000 & 1/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA -detector (s=0) & 14706.650000 & 133269.710000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA -exposure-weighted trust & 14706.650000 & 13861.630000 & 1/5 & 0.312500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA -hard rules & 14706.650000 & 13726.390000 & 0/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA -low-trust gate & 14706.650000 & 14706.650000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA -verification feedback & 14706.650000 & 21133.260000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=hybrid & 14706.650000 & 18893.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=iforest & 14706.650000 & 70083.640000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=lstm & 14706.650000 & 22434.990000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=lstm\_ae & 14706.650000 & 43425.510000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=rules & 14706.650000 & 42641.720000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=tcn & 14706.650000 & 19170.090000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA detector=xgboost & 14706.650000 & 16484.570000 & 3/5 & 0.437500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 14706.650000 & 13964.740000 & 1/5 & 0.187500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA trust=beta & 14706.650000 & 14703.700000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA trust=ewma & 14706.650000 & 16847.260000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA trust=none & 14706.650000 & 14744.020000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA trust=static & 14706.650000 & 14760.070000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 14706.650000 & 16322.800000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & ATFA weighted-sum risk & 14706.650000 & 17535.720000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & B0 approve all (smart contract only) & 14706.650000 & 189898.470000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & B1 hard rules only & 14706.650000 & 163840.500000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & B2 fixed amount threshold & 14706.650000 & 119011.950000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & B3 detector only & 14706.650000 & 14744.020000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & fvs & B4 trust only & 14706.650000 & 68193.620000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA (provisional thresholds) & 30009.150000 & 31214.310000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 30009.150000 & 36043.740000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA +random audits & 30009.150000 & 34195.330000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA -asymmetric evidence & 30009.150000 & 28981.340000 & 1/5 & 0.312500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA -detector (s=0) & 30009.150000 & 145582.310000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 30009.150000 & 30144.670000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA -hard rules & 30009.150000 & 30372.750000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA -low-trust gate & 30009.150000 & 30009.150000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA -verification feedback & 30009.150000 & 38486.900000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=hybrid & 30009.150000 & 36168.940000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=iforest & 30009.150000 & 88323.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=lstm & 30009.150000 & 40671.730000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 30009.150000 & 63362.170000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=rules & 30009.150000 & 59929.340000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=tcn & 30009.150000 & 38683.670000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA detector=xgboost & 30009.150000 & 33348.170000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 30009.150000 & 33136.140000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA trust=beta & 30009.150000 & 32155.220000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA trust=ewma & 30009.150000 & 33474.080000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA trust=none & 30009.150000 & 29545.540000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA trust=static & 30009.150000 & 29544.990000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 30009.150000 & 35091.100000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & ATFA weighted-sum risk & 30009.150000 & 33507.960000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B0 approve all (smart contract only) & 30009.150000 & 189898.470000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B1 hard rules only & 30009.150000 & 163840.500000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B2 fixed amount threshold & 30009.150000 & 132161.950000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B3 detector only & 30009.150000 & 29545.540000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_family\_gradual & 0.200000 & total\_cost & B4 trust only & 30009.150000 & 85620.680000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA (provisional thresholds) & 14554.760000 & 13825.180000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 14554.760000 & 16218.080000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA +random audits & 14554.760000 & 14535.360000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA -asymmetric evidence & 14554.760000 & 13544.650000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA -detector (s=0) & 14554.760000 & 129774.980000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA -exposure-weighted trust & 14554.760000 & 14155.270000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA -hard rules & 14554.760000 & 13193.970000 & 0/5 & 0.125000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA -low-trust gate & 14554.760000 & 14554.760000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA -verification feedback & 14554.760000 & 21202.950000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=hybrid & 14554.760000 & 17322.870000 & 3/5 & 0.437500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=iforest & 14554.760000 & 60172.240000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=lstm & 14554.760000 & 23130.520000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=lstm\_ae & 14554.760000 & 41887.970000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=rules & 14554.760000 & 36075.490000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=tcn & 14554.760000 & 17345.910000 & 3/5 & 0.437500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA detector=xgboost & 14554.760000 & 18705.880000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 14554.760000 & 12784.480000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA trust=beta & 14554.760000 & 16669.270000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA trust=ewma & 14554.760000 & 16560.630000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA trust=none & 14554.760000 & 13265.410000 & 2/5 & 0.437500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA trust=static & 14554.760000 & 12840.050000 & 1/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 14554.760000 & 13831.050000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & ATFA weighted-sum risk & 14554.760000 & 15649.720000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & B0 approve all (smart contract only) & 14554.760000 & 255496.550000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & B1 hard rules only & 14554.760000 & 226931.410000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & B2 fixed amount threshold & 14554.760000 & 148998.160000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & B3 detector only & 14554.760000 & 13265.410000 & 2/5 & 0.437500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & fvs & B4 trust only & 14554.760000 & 60902.930000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA (provisional thresholds) & 33917.980000 & 38373.500000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 33917.980000 & 34556.460000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA +random audits & 33917.980000 & 37924.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA -asymmetric evidence & 33917.980000 & 32696.490000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA -detector (s=0) & 33917.980000 & 143577.380000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 33917.980000 & 33008.310000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA -hard rules & 33917.980000 & 34177.110000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA -low-trust gate & 33917.980000 & 33917.980000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA -verification feedback & 33917.980000 & 44583.930000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=hybrid & 33917.980000 & 41244.170000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=iforest & 33917.980000 & 79621.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=lstm & 33917.980000 & 45504.360000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 33917.980000 & 62010.610000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=rules & 33917.980000 & 53480.330000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=tcn & 33917.980000 & 40985.350000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA detector=xgboost & 33917.980000 & 41831.420000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 33917.980000 & 37953.040000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA trust=beta & 33917.980000 & 41142.230000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA trust=ewma & 33917.980000 & 42012.510000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA trust=none & 33917.980000 & 30756.710000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA trust=static & 33917.980000 & 33701.750000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 33917.980000 & 35791.850000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & ATFA weighted-sum risk & 33917.980000 & 36525.780000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B0 approve all (smart contract only) & 33917.980000 & 255496.550000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B1 hard rules only & 33917.980000 & 226931.410000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B2 fixed amount threshold & 33917.980000 & 161653.160000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B3 detector only & 33917.980000 & 30756.710000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_inflation & 0.200000 & total\_cost & B4 trust only & 33917.980000 & 78651.290000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA (provisional thresholds) & 15661.300000 & 14737.570000 & 2/5 & 0.437500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 15661.300000 & 18345.850000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA +random audits & 15661.300000 & 15620.180000 & 1/5 & 1.000000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA -asymmetric evidence & 15661.300000 & 16420.200000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA -detector (s=0) & 15661.300000 & 113557.310000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA -exposure-weighted trust & 15661.300000 & 15756.550000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA -hard rules & 15661.300000 & 14400.550000 & 0/5 & 0.250000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA -low-trust gate & 15661.300000 & 15661.300000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA -verification feedback & 15661.300000 & 22094.180000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=hybrid & 15661.300000 & 17976.980000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=iforest & 15661.300000 & 57548.130000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=lstm & 15661.300000 & 25496.180000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=lstm\_ae & 15661.300000 & 37513.050000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=rules & 15661.300000 & 38212.110000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=tcn & 15661.300000 & 16450.030000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA detector=xgboost & 15661.300000 & 19680.430000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 15661.300000 & 16239.790000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA trust=beta & 15661.300000 & 18043.540000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA trust=ewma & 15661.300000 & 18434.910000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA trust=none & 15661.300000 & 16209.510000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA trust=static & 15661.300000 & 16759.970000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 15661.300000 & 17089.640000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & ATFA weighted-sum risk & 15661.300000 & 18541.120000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & B0 approve all (smart contract only) & 15661.300000 & 250641.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & B1 hard rules only & 15661.300000 & 219708.400000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & B2 fixed amount threshold & 15661.300000 & 148365.080000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & B3 detector only & 15661.300000 & 16209.510000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & fvs & B4 trust only & 15661.300000 & 59163.780000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA (provisional thresholds) & 35672.980000 & 40923.970000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 35672.980000 & 36242.110000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA +random audits & 35672.980000 & 40225.680000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA -asymmetric evidence & 35672.980000 & 34049.640000 & 2/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA -detector (s=0) & 35672.980000 & 128928.630000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 35672.980000 & 34650.850000 & 1/5 & 0.125000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA -hard rules & 35672.980000 & 35922.490000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA -low-trust gate & 35672.980000 & 35672.980000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA -verification feedback & 35672.980000 & 45092.980000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=hybrid & 35672.980000 & 37919.560000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=iforest & 35672.980000 & 77241.770000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=lstm & 35672.980000 & 47963.520000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 35672.980000 & 56856.570000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=rules & 35672.980000 & 58799.970000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=tcn & 35672.980000 & 37466.610000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA detector=xgboost & 35672.980000 & 40214.190000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 35672.980000 & 35059.250000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA trust=beta & 35672.980000 & 39145.480000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA trust=ewma & 35672.980000 & 39275.930000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA trust=none & 35672.980000 & 35894.710000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA trust=static & 35672.980000 & 34905.650000 & 1/5 & 0.625000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 35672.980000 & 38701.420000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & ATFA weighted-sum risk & 35672.980000 & 35237.920000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B0 approve all (smart contract only) & 35672.980000 & 250641.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B1 hard rules only & 35672.980000 & 219708.400000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B2 fixed amount threshold & 35672.980000 & 160800.080000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B3 detector only & 35672.980000 & 35894.710000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_on\_off & 0.200000 & total\_cost & B4 trust only & 35672.980000 & 79237.520000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA (provisional thresholds) & 21839.810000 & 21003.020000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 21839.810000 & 23173.900000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA +random audits & 21839.810000 & 21230.810000 & 0/5 & 0.500000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA -asymmetric evidence & 21839.810000 & 22714.260000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA -detector (s=0) & 21839.810000 & 112919.040000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA -exposure-weighted trust & 21839.810000 & 21716.670000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA -hard rules & 21839.810000 & 31835.090000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA -low-trust gate & 21839.810000 & 21839.810000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA -verification feedback & 21839.810000 & 24972.730000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=hybrid & 21839.810000 & 21670.200000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=iforest & 21839.810000 & 50222.150000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=lstm & 21839.810000 & 26234.130000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=lstm\_ae & 21839.810000 & 30065.880000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=rules & 21839.810000 & 31367.110000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=tcn & 21839.810000 & 22114.620000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA detector=xgboost & 21839.810000 & 23628.750000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 21839.810000 & 21132.740000 & 1/5 & 0.125000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA trust=beta & 21839.810000 & 23410.260000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA trust=ewma & 21839.810000 & 23458.260000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA trust=none & 21839.810000 & 22044.420000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA trust=static & 21839.810000 & 22346.290000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 21839.810000 & 20540.000000 & 2/5 & 0.437500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & ATFA weighted-sum risk & 21839.810000 & 22946.410000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & B0 approve all (smart contract only) & 21839.810000 & 274019.380000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & B1 hard rules only & 21839.810000 & 237385.810000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & B2 fixed amount threshold & 21839.810000 & 158381.370000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & B3 detector only & 21839.810000 & 22044.420000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & fvs & B4 trust only & 21839.810000 & 52237.230000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA (provisional thresholds) & 42270.410000 & 46391.740000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 42270.410000 & 43257.240000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA +random audits & 42270.410000 & 46207.450000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA -asymmetric evidence & 42270.410000 & 45360.500000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA -detector (s=0) & 42270.410000 & 128740.000000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 42270.410000 & 43221.210000 & 3/5 & 0.437500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA -hard rules & 42270.410000 & 53216.770000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA -low-trust gate & 42270.410000 & 42270.410000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA -verification feedback & 42270.410000 & 50143.110000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=hybrid & 42270.410000 & 44307.860000 & 3/5 & 0.437500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=iforest & 42270.410000 & 72853.670000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=lstm & 42270.410000 & 50779.430000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 42270.410000 & 50781.160000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=rules & 42270.410000 & 50934.050000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=tcn & 42270.410000 & 43401.820000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA detector=xgboost & 42270.410000 & 45804.150000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 42270.410000 & 44721.880000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA trust=beta & 42270.410000 & 44887.400000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA trust=ewma & 42270.410000 & 44310.580000 & 3/5 & 0.312500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA trust=none & 42270.410000 & 42648.220000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA trust=static & 42270.410000 & 42538.270000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 42270.410000 & 46582.140000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & ATFA weighted-sum risk & 42270.410000 & 42663.810000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & B0 approve all (smart contract only) & 42270.410000 & 274019.380000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & B1 hard rules only & 42270.410000 & 237385.810000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & B2 fixed amount threshold & 42270.410000 & 170716.370000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & B3 detector only & 42270.410000 & 42648.220000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_family\_replay & 0.200000 & total\_cost & B4 trust only & 42270.410000 & 70899.670000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA (provisional thresholds) & 16769.000000 & 15280.090000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 16769.000000 & 19510.420000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA +random audits & 16769.000000 & 17262.970000 & 2/5 & 0.500000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA -asymmetric evidence & 16769.000000 & 15782.440000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA -detector (s=0) & 16769.000000 & 141043.950000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA -exposure-weighted trust & 16769.000000 & 17269.090000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA -hard rules & 16769.000000 & 16638.350000 & 0/5 & 0.250000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA -low-trust gate & 16769.000000 & 16769.000000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA -verification feedback & 16769.000000 & 24051.260000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=hybrid & 16769.000000 & 21779.300000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=iforest & 16769.000000 & 59264.180000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=lstm & 16769.000000 & 17721.180000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=lstm\_ae & 16769.000000 & 41036.400000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=rules & 16769.000000 & 49803.770000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=tcn & 16769.000000 & 21792.420000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA detector=xgboost & 16769.000000 & 17695.180000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 16769.000000 & 14741.320000 & 1/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA trust=beta & 16769.000000 & 19317.670000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA trust=ewma & 16769.000000 & 19889.900000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA trust=none & 16769.000000 & 16540.830000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA trust=static & 16769.000000 & 16767.620000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 16769.000000 & 18301.150000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & ATFA weighted-sum risk & 16769.000000 & 17746.440000 & 4/5 & 0.312500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & B0 approve all (smart contract only) & 16769.000000 & 427223.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & B1 hard rules only & 16769.000000 & 339286.640000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & B2 fixed amount threshold & 16769.000000 & 166833.860000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & B3 detector only & 16769.000000 & 16540.830000 & 2/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & fvs & B4 trust only & 16769.000000 & 69157.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA (provisional thresholds) & 40056.200000 & 41704.110000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 40056.200000 & 38904.280000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA +random audits & 40056.200000 & 42247.170000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA -asymmetric evidence & 40056.200000 & 37438.740000 & 1/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA -detector (s=0) & 40056.200000 & 156312.150000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 40056.200000 & 39398.230000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA -hard rules & 40056.200000 & 37978.310000 & 1/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA -low-trust gate & 40056.200000 & 40056.200000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA -verification feedback & 40056.200000 & 51923.080000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=hybrid & 40056.200000 & 41329.080000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=iforest & 40056.200000 & 83104.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=lstm & 40056.200000 & 40892.620000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 40056.200000 & 68763.740000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=rules & 40056.200000 & 68018.350000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=tcn & 40056.200000 & 42075.880000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA detector=xgboost & 40056.200000 & 40686.360000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 40056.200000 & 39259.200000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA trust=beta & 40056.200000 & 40038.010000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA trust=ewma & 40056.200000 & 42224.260000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA trust=none & 40056.200000 & 37308.170000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA trust=static & 40056.200000 & 38730.340000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 40056.200000 & 42434.270000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & ATFA weighted-sum risk & 40056.200000 & 42240.460000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B0 approve all (smart contract only) & 40056.200000 & 427223.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B1 hard rules only & 40056.200000 & 339286.640000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B2 fixed amount threshold & 40056.200000 & 181113.860000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B3 detector only & 40056.200000 & 37308.170000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_high & 0.200000 & total\_cost & B4 trust only & 40056.200000 & 88832.760000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA (provisional thresholds) & 9050.190000 & 7496.540000 & 0/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA +exposure term F (noisy-OR) & 9050.190000 & 12769.800000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA +random audits & 9050.190000 & 9696.470000 & 2/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA -asymmetric evidence & 9050.190000 & 9174.100000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA -detector (s=0) & 9050.190000 & 62484.710000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA -exposure-weighted trust & 9050.190000 & 9447.700000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA -hard rules & 9050.190000 & 8381.740000 & 1/5 & 0.500000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA -low-trust gate & 9050.190000 & 9050.190000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA -verification feedback & 9050.190000 & 13949.510000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=hybrid & 9050.190000 & 11940.390000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=iforest & 9050.190000 & 43440.140000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=lstm & 9050.190000 & 13369.780000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=lstm\_ae & 9050.190000 & 24174.720000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=rules & 9050.190000 & 22362.660000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=tcn & 9050.190000 & 12779.330000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA detector=xgboost & 9050.190000 & 10048.140000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA expected-loss risk (lambda=0.7) & 9050.190000 & 8328.890000 & 2/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA trust=beta & 9050.190000 & 10967.260000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA trust=ewma & 9050.190000 & 11404.690000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA trust=none & 9050.190000 & 9328.980000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA trust=static & 9050.190000 & 9436.490000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 9050.190000 & 11199.760000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & ATFA weighted-sum risk & 9050.190000 & 11340.750000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & B0 approve all (smart contract only) & 9050.190000 & 134222.120000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & B1 hard rules only & 9050.190000 & 112463.220000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & B2 fixed amount threshold & 9050.190000 & 92597.120000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & B3 detector only & 9050.190000 & 9328.980000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & fvs & B4 trust only & 9050.190000 & 43056.200000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA (provisional thresholds) & 31066.850000 & 33212.520000 & 4/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA +exposure term F (noisy-OR) & 31066.850000 & 31853.680000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA +random audits & 31066.850000 & 33766.570000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA -asymmetric evidence & 31066.850000 & 30567.480000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA -detector (s=0) & 31066.850000 & 78287.370000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA -exposure-weighted trust & 31066.850000 & 31950.460000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA -hard rules & 31066.850000 & 29898.220000 & 1/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA -low-trust gate & 31066.850000 & 31066.850000 & 0/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA -verification feedback & 31066.850000 & 36287.170000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=hybrid & 31066.850000 & 30296.650000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=iforest & 31066.850000 & 60517.240000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=lstm & 31066.850000 & 35362.300000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=lstm\_ae & 31066.850000 & 45486.240000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=rules & 31066.850000 & 38586.940000 & 4/5 & 0.187500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=tcn & 31066.850000 & 31308.510000 & 2/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA detector=xgboost & 31066.850000 & 32540.060000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA expected-loss risk (lambda=0.7) & 31066.850000 & 33244.710000 & 4/5 & 0.437500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA trust=beta & 31066.850000 & 31410.040000 & 3/5 & 0.812500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA trust=ewma & 31066.850000 & 32515.350000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA trust=none & 31066.850000 & 31560.360000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA trust=static & 31066.850000 & 33020.850000 & 3/5 & 0.625000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA v1 authorisation (noisy-OR+F, rolling exposure) & 31066.850000 & 35748.060000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & ATFA weighted-sum risk & 31066.850000 & 35792.550000 & 4/5 & 0.125000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B0 approve all (smart contract only) & 31066.850000 & 134222.120000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B1 hard rules only & 31066.850000 & 112712.980000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B2 fixed amount threshold & 31066.850000 & 103716.880000 & 5/5 & 0.062500 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B3 detector only & 31066.850000 & 31560.360000 & 3/5 & 1.000000 & 1.000000 \\
+ood\_intensity\_low & 0.200000 & total\_cost & B4 trust only & 31066.850000 & 57475.860000 & 5/5 & 0.062500 & 1.000000 \\
+\bottomrule
+\end{tabular}

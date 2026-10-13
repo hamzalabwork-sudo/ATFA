@@ -1,0 +1,9 @@
+component,single_claim_ms,per_claim_in_daily_batch_ms
+detector: TCN,2.045587500324473,0.06179172000847757
+detector: XGBoost,0.4492735001258552,0.01064953999593854
+detector: TCN+XGBoost ensemble,4.083968499908224,0.09654343998990952
+trust + risk + decision (fleet 100),,0.000409509998280555
+trust + risk + decision (fleet 1000),,6.14324992056936e-05
+trust + risk + decision (fleet 10000),,2.1338450023904444e-05
+evidence digest (SHA-256),0.012802950106561184,
+"daily feature extraction (batch, per report)",,0.0034023342488257034
